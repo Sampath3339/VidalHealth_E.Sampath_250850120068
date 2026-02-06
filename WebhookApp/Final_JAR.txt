@@ -1,0 +1,27 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2026-02-06T11:59:05.990+05:30  INFO 23792 --- [           main] c.h.assessment.AssessmentApplication     : Starting AssessmentApplication using Java 17.0.12 with PID 23792 (C:\Intern\E.Sampath_250850120068_Vidal_Health\WebhookApp\target\classes started by this pc in C:\Intern\E.Sampath_250850120068_Vidal_Health\WebhookApp)
+2026-02-06T11:59:05.997+05:30  INFO 23792 --- [           main] c.h.assessment.AssessmentApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-02-06T11:59:07.450+05:30  INFO 23792 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-02-06T11:59:07.466+05:30  INFO 23792 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-06T11:59:07.466+05:30  INFO 23792 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2026-02-06T11:59:07.553+05:30  INFO 23792 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-06T11:59:07.556+05:30  INFO 23792 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1482 ms
+2026-02-06T11:59:08.144+05:30  INFO 23792 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5345 (http) with context path ''
+2026-02-06T11:59:08.159+05:30  INFO 23792 --- [           main] c.h.assessment.AssessmentApplication     : Started AssessmentApplication in 2.688 seconds (process running for 3.202)
+2026-02-06T11:59:08.165+05:30  INFO 23792 --- [           main] c.h.a.service.WebhookExecutionService    : Starting Webhook Execution Flow...
+2026-02-06T11:59:08.165+05:30  INFO 23792 --- [           main] c.h.a.service.WebhookExecutionService    : Generating Webhook for RegNo: 250850120068
+2026-02-06T11:59:08.873+05:30  INFO 23792 --- [           main] c.h.a.service.WebhookExecutionService    : RAW RESPONSE FROM GENERATE WEBHOOK: {"webhook":"https://bfhldevapigw.healthrx.co.in/hiring/testWebhook/JAVA","accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJyZWdObyI6IjI1MDg1MDEyMDA2OCIsIm5hbWUiOiJFLlNhbXBhdGggS3VtYXIiLCJlbWFpbCI6ImUuc2FtcGF0aGt1bWFyLjI0QGdtYWlsLmNvbSIsInN1YiI6IndlYmhvb2stdXNlciIsImlhdCI6MTc3MDM1OTM0OCwiZXhwIjoxNzcwMzYwMjQ4fQ.a1tFTdKB62htnVURCenpuJ4m3O5A1L_D8-CnAKbSnBo"}
+2026-02-06T11:59:08.874+05:30  INFO 23792 --- [           main] c.h.a.service.WebhookExecutionService    : Received Webhook URL: https://bfhldevapigw.healthrx.co.in/hiring/testWebhook/JAVA
+2026-02-06T11:59:08.874+05:30  INFO 23792 --- [           main] c.h.a.service.WebhookExecutionService    : Received Access Token: [HIDDEN]
+2026-02-06T11:59:08.874+05:30  INFO 23792 --- [           main] c.h.a.service.WebhookExecutionService    : RegNo ends in Even digit (8). Selecting Query 2.
+2026-02-06T11:59:08.874+05:30  INFO 23792 --- [           main] c.h.a.service.WebhookExecutionService    : Submitting solution to: https://bfhldevapigw.healthrx.co.in/hiring/testWebhook/JAVA
+2026-02-06T11:59:08.943+05:30  INFO 23792 --- [           main] c.h.a.service.WebhookExecutionService    : Submission Response Code: 200 OK
+2026-02-06T11:59:08.946+05:30  INFO 23792 --- [           main] c.h.a.service.WebhookExecutionService    : Submission Response Body: {"success":true,"message":"Webhook processed successfully"}
